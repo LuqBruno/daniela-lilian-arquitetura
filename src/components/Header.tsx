@@ -24,8 +24,9 @@ export function Header() {
       <a className="pular" href="#conteudo">Pular para o conteúdo</a>
       <div className="topo__barra">
         <a className="topo__marca" href="#inicio" aria-label={`${marca.nome} ${marca.complemento}, início`}>
-          <span className="topo__nome">{marca.nome}</span>
-          <span className="topo__comp">{marca.complemento}</span>
+          <img className="topo__simbolo" src="./brand/simbolo-daniela-lilian.webp" alt="" width="76" height="70" />
+          <span className="topo__assinatura"><span className="topo__nome">{marca.nome}</span>
+          <span className="topo__comp">{marca.complemento}</span></span>
         </a>
         <nav className="topo__nav" aria-label="Seções">
           {navegacao.map((item) => (

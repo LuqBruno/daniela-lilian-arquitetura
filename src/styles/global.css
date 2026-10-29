@@ -94,7 +94,9 @@ h2 { font-size: var(--tam-h2); line-height: 1.02; letter-spacing: -.01em; }
   height: var(--topo);
   padding-inline: max(var(--gutter), calc((100% - var(--largura-conteudo)) / 2 + var(--gutter)));
 }
-.topo__marca { display: flex; flex-direction: column; text-decoration: none; line-height: 1; }
+.topo__marca { display: flex; align-items: center; gap: 12px; text-decoration: none; line-height: 1; }
+.topo__simbolo { width: 42px; height: auto; flex: none; }
+.topo__assinatura { display: flex; flex-direction: column; }
 .topo__nome { font-family: var(--font-titulo); font-size: 1.5rem; font-weight: 420; letter-spacing: -.005em; }
 .topo__comp { margin-top: 5px; font-size: .62rem; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--cor-texto-secundario); }
 .topo__nav { display: flex; gap: 34px; margin-left: auto; }
@@ -117,6 +119,9 @@ h2 { font-size: var(--tam-h2); line-height: 1.02; letter-spacing: -.01em; }
 @media (max-width: 959px) {
   .topo__barra { gap: 12px; }
   .topo__nome { font-size: 1.3rem; }
+  .topo__marca { gap: 8px; }
+  .topo__simbolo { width: 32px; }
+  .topo__assinatura .topo__nome { font-size: 1.05rem; }
   .topo__nav { display: none; }
   .topo__cta { margin-left: auto; padding: 0 14px; }
   .topo__menu { display: inline-flex; margin-right: -10px; }

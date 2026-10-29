@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- Prévia comercial não oficial: manter noindex. Publicação só com autorização do escritório. -->
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Daniela e Lilian Arquitetura — prévia de apresentação</title>
+    <meta name="description" content="Arquitetura e interiores em Criciúma, com atendimento em todo o Brasil. Prévia não oficial de apresentação." />
+    <meta name="theme-color" content="#e9e3d9" />
+    <!-- Sem favicon até receber o logo oficial; evita 404 e não inventa símbolo. -->
+    <link rel="icon" href="data:," />
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/fraunces-latin-standard-normal.woff2" crossorigin />
+    <link rel="preload" as="image" type="image/avif" fetchpriority="high"
+      imagesrcset="./media/ia-materia-luz-conceitual-480.avif 480w, ./media/ia-materia-luz-conceitual-768.avif 768w, ./media/ia-materia-luz-conceitual-1200.avif 1200w, ./media/ia-materia-luz-conceitual-1600.avif 1600w"
+      imagesizes="(min-width: 960px) 58vw, 100vw" />
+    <style>
+      /* Fontes locais (SIL OFL, licenças em ./fonts/). Caminhos relativos ao index publicado. */
+      /* Fraunces substitui a Cormorant Garamond (26/10/2026): o desenho da Cormorant deixa o circunflexo solto nos títulos grandes. */
+      @font-face { font-family: "Fraunces"; src: url("./fonts/fraunces-latin-standard-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+      @font-face { font-family: "Fraunces"; src: url("./fonts/fraunces-latin-standard-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+      @font-face { font-family: "Manrope"; src: url("./fonts/manrope-latin.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+    </style>
+    <script>
+      // Estados iniciais de movimento só existem com JS e sem redução de movimento.
+      // Se o app não confirmar em 3 s, o conteúdo volta ao estado final.
+      (function () {
+        if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return
+        var root = document.documentElement
+        root.classList.add('js-motion')
+        setTimeout(function () { if (!window.__motionReady) root.classList.remove('js-motion') }, 3000)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

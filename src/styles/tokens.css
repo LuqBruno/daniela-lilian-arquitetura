@@ -1,0 +1,43 @@
+/* Proposta visual de 26/10/2026 (materiais/tokens.css), não manual oficial de marca.
+   @font-face fica no index.html para manter caminhos relativos ao bundle. */
+:root {
+  --cor-papel: #eae4dc;
+  --cor-superficie: #f8f5ef;
+  --cor-tinta: #292723;
+  --cor-texto-secundario: #645d53;
+  --cor-madeira: #66513b;
+  --cor-linha: #bcb2a3;
+  --cor-vidro: #9d9587;
+  --cor-suave: #d5c7b1;
+  --cor-foco: #654a2e;
+  /* Tons de lâmina para a seleção: carvalho claro sob luz indireta. */
+  --cor-lamina-1: #ddd0bc;
+  --cor-lamina-2: #d3c3aa;
+  --cor-lamina-3: #c8b496;
+
+  --font-titulo: Fraunces, Georgia, "Times New Roman", serif;
+  --peso-titulo: 320;
+  --font-texto: Manrope, Arial, sans-serif;
+  --tam-titulo: clamp(3.1rem, 6.6vw, 7rem);
+  --tam-h2: clamp(2.4rem, 4.6vw, 4.6rem);
+  --tam-texto: clamp(1rem, 1.1vw, 1.125rem);
+
+  --raio-botao: 2px;
+  --largura-conteudo: 1440px;
+  --gutter: clamp(20px, 5vw, 96px);
+  --topo: 72px;
+
+  --duracao-feedback: 140ms;
+  --duracao-painel: 600ms;
+  --duracao-hero: 620ms;
+  --ease-saida: cubic-bezier(.22, 1, .36, 1);
+  --ease-lamina: cubic-bezier(.65, 0, .25, 1);
+}
+
+@media (max-width: 959px) {
+  :root { --topo: 60px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --duracao-feedback: 0ms; --duracao-painel: 0ms; --duracao-hero: 0ms; }
+}

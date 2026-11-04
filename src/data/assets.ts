@@ -19,12 +19,6 @@ export const conceito: Imagem = {
   rotulo: 'Estudo visual conceitual',
 }
 
-/** Loop do hero: o mesmo estudo animado no Higgsfield (Kling 3.0), ida e volta, sem som. */
-export const heroVideo = {
-  desktop: './media/ia-hero-luz-conceitual-1600.mp4',
-  movel: './media/ia-hero-luz-conceitual-960.mp4',
-} as const
-
 export const croqui: Imagem = {
   base: './media/ia-croqui-conceitual',
   larguras: [640, 1024],
